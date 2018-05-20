@@ -7,13 +7,13 @@ def start(bot, update):
 	bot.send_message(chat_id = update.message.chat_id, text = "Ecco l'ultimo podcast disponibile")
 
 
-from telegram.ext import Updater
+from telegram import Updater
 
 updater = Updater(token = TOKEN)
 dispatcher = updater.dispatcher
 
 
-from telegram.ext import CommandHandler
+from telegram import CommandHandler
 
 start_handler = CommandHandler('start', start)
 
