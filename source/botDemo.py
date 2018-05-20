@@ -1,4 +1,4 @@
-import telegram 
+import telegram
 
 # Start
 TOKEN = "607283694:AAGk1aiS_11-c-cYHSwGVbfM34bb4TJ-x-4"
@@ -22,4 +22,3 @@ start_handler = CommandHandler('start', start)
 dispatcher.add_handler(start_handler)
 
 updater.start_polling()
-
